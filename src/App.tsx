@@ -1,4 +1,4 @@
-import FunctionalComponent from "./components/FunctionalComponent.tsx";
+import FunctionalComponent from "./components/LessonTwo/FunctionalComponent.tsx";
 function App() {
 
   return (
