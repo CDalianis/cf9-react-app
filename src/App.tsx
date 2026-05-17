@@ -1,11 +1,9 @@
-
-import './App.css'
-
+import FunctionalComponent from "./components/FunctionalComponent.tsx";
 function App() {
 
   return (
     <>
-
+      <FunctionalComponent />
     </>
   )}
 
