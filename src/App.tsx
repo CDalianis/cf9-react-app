@@ -3,6 +3,14 @@
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
+// import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import NameChanger from "./components/LessonFive/NameChanger.tsx";
+// import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+// import {useEffect} from "react";
+import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+// import Counter from "./components/LessonFour/Counter.tsx";
+// import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
+// import {useState} from "react";
 
 // type PropsA = {
 //   title: string,
@@ -41,7 +49,20 @@ import Layout from "./components/Layout.tsx";
 // }
 // // PropsThree = {title, description, price, sort, image}
 
+// function setup() {
+//   alert("count")
+// }
+//
+// useEffect(setup, [count])
+
+
+
 function App() {
+
+    // useEffect(() => {
+    //     alert("Hello World!");
+    //   }
+    //   )
 
     return (
         <>
@@ -59,15 +80,26 @@ function App() {
             {/*  title="Second Title"*/}
             {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
             {/*/>*/}
+            {/*<Layout addClasses="bg-gray-100">*/}
+            {/*  <ArrowFunctionalComponentWithProps*/}
+            {/*    title="Second Title"*/}
+            {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
+            {/*  />*/}
+            {/*</Layout>*/}
 
-            <Layout addClasses="text-blue-600 bg-gray-100">
-                {/*<ArrowFunctionalComponentWithProps*/}
-                {/*  title="Second Title"*/}
-                {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
-                {/*/>*/}
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reiciendis.</p>
+            {/*LESSON FOUR*/}
+            {/*<Layout addClasses="bg-gray-50">*/}
+            {/*  /!*<Counter/>*!/*/}
+            {/*  /!*<ClassCounter/>*!/*/}
+            {/*  <CounterAdvanced/>*/}
+            {/*</Layout>*/}
+
+            {/*LESSON FIVE*/}
+            <Layout addClasses="bg-gray-50">
+                {/*<NameChanger/>*/}
+                {/*<CounterWithCustomHook/>*/}
+                <NameChangerWithTitle />
             </Layout>
-
         </>
     )
 }
